@@ -1,0 +1,55 @@
+body {
+    background-color: pink;
+    font-family: "Emilys Candy", serif;
+    font-weight: 400;
+    font-size: larger;
+}
+
+.emilys-candy-regular {
+    font-family: "Emilys Candy", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+img {
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    position: relative;
+}
+
+p {
+    color: black;
+    width: 80%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+    opacity: 0;
+ }
+
+ .lista {
+    display: flex;
+    gap: 1em;
+}
+
+.item {
+    overflow: hidden;
+    transition: 1s;
+    
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.item:hover p {
+    opacity: 1;
+    top: 50%;
+}
+
+.lista:hover .item:not(:hover) {
+    filter: blur(5px);
+}    
+ 
